@@ -14,7 +14,7 @@ class TestRTI:
         self.driver = self.open_Browser
         self.driver.maximize_window()
         self.driver.get(self.baseURL)
-        title = self.driver.title
+        title = self.driver.title    
         if title == 'Red Thread Innovations':
             assert True
             self.logger.info("**************** RTI1.1 Test Pass ******************")
